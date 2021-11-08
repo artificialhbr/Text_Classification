@@ -32,22 +32,9 @@ CNN做句子分类的论文可以参看: [Convolutional Neural Networks for Sent
 
 从原数据集生成子集的过程请参看`helper`下的两个脚本。其中，`copy_data.sh`用于从每个分类拷贝6500个文件，`cnews_group.py`用于将多个文件整合到一个文件中。执行该文件后，得到三个数据文件：
 
-- cnews.train.txt: 训练集(50000条)
-- cnews.val.txt: 验证集(5000条)
-- cnews.test.txt: 测试集(10000条)
-
-## 预处理
-
-`data/cnews_loader.py`为数据的预处理文件。
-
-- `read_file()`: 读取文件数据;
-- `build_vocab()`: 构建词汇表，使用字符级的表示，这一函数会将词汇表存储下来，避免每一次重复处理;
-- `read_vocab()`: 读取上一步存储的词汇表，转换为`{词：id}`表示;
-- `read_category()`: 将分类目录固定，转换为`{类别: id}`表示;
-- `to_words()`: 将一条由id表示的数据重新转换为文字;
-- `process_file()`: 将数据集从文字转换为固定长度的id序列表示;
-- `batch_iter()`: 为神经网络的训练准备经过shuffle的批次的数据。
-
+- data.train.txt: 训练集(50000条)
+- data.dev.txt: 验证集(10000条)
+- data.test.txt: 测试集(10000条)
 
 
 ## CNN卷积神经网络
