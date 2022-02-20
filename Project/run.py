@@ -15,7 +15,7 @@ args = parser.parse_args()
 
 
 if __name__ == '__main__':
-    dataset = 'homework1/THUCNews'  # 数据集
+    dataset = 'Project/THUCNews'  # 数据集
 
     # 搜狗新闻:embedding_SougouNews.npz, 腾讯:embedding_Tencent.npz, 随机初始化:random
     embedding = args.embed
