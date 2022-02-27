@@ -12,6 +12,9 @@ CNN做句子分类的论文可以参看: [Convolutional Neural Networks for Sent
 - scikit-learn
 - scipy
 
+## 下载依赖
+pip install -r requirements.txt
+
 ## 数据集
 
 使用THUCNews的一个子集进行训练与测试，数据集请自行到[THUCTC：一个高效的中文文本分类工具包](http://thuctc.thunlp.org/)下载
