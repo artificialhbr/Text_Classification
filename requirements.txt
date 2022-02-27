@@ -1,0 +1,5 @@
+numpy==1.19.5
+scikit_learn==1.0.2
+tensorboardX==2.5
+torch==1.8.0+cu111
+tqdm==4.61.1
