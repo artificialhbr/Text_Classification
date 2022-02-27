@@ -121,9 +121,6 @@ No optimization for a long time, auto-stopping...
 
 在验证集上的最佳效果为94.12%，且只经过了3轮迭代就已经停止。
 
-准确率和误差如图所示：
-
-![images](images/acc_loss.png)
 
 
 ### 测试
